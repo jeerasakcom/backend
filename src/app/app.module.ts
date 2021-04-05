@@ -40,6 +40,12 @@ import { StockComponent } from './components/pages/stock/stock.component';
 import { HeaderBackendComponent } from './components/shared/backend/header-backend/header-backend.component';
 import { BackendLayoutComponent } from './components/layouts/backend-layout/backend-layout.component';
 import { SidenavComponent } from './components/shared/backend/sidenav/sidenav.component';
+import { StockHomeComponent } from './components/stock/stock-home/stock-home.component';
+import { StockCreateComponent } from './components/stock/stock-create/stock-create.component';
+import { StockEditComponent } from './components/stock/stock-edit/stock-edit.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { ReportsComponent } from './components/reports/reports.component';
+import { CustomersComponent } from './components/customers/customers.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +56,12 @@ import { SidenavComponent } from './components/shared/backend/sidenav/sidenav.co
     HeaderBackendComponent,
     BackendLayoutComponent,
     SidenavComponent,
+    StockHomeComponent,
+    StockCreateComponent,
+    StockEditComponent,
+    OrdersComponent,
+    ReportsComponent,
+    CustomersComponent,
   ],
   imports: [
     BrowserModule,
