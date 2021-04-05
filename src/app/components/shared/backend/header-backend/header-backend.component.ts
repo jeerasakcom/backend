@@ -7,7 +7,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class HeaderBackendComponent implements OnInit {
 
-
   @Output("toggle") navToggle = new EventEmitter();
 
   constructor() { }
