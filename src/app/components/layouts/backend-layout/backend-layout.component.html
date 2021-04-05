@@ -1,0 +1,14 @@
+<div>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav [mode]="mobileQuery.matches ? 'over':'side'" [opened]="mobileQuery.matches ? false:true ">
+      <button mat-button>Action</button>
+      <button mat-button>Action2</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-header-backend (toggle)="sidenav.toggle()"></app-header-backend>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
