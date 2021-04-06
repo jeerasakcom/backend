@@ -8,6 +8,7 @@ import { BackendLayoutComponent } from './components/layouts/backend-layout/back
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { ReportsComponent } from './components/reports/reports.component';
+import { LoginComponent } from './components/pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,7 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        component: DashboardComponent,
+        component: LoginComponent,
       },
       {
         path: "dashboard",
@@ -33,6 +34,10 @@ const routes: Routes = [
       {
         path: "customers",
         component: CustomersComponent,
+      },
+      {
+        path: "login",
+        component: LoginComponent,
       },
       {
         path: "stock",
